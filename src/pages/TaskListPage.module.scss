@@ -1,0 +1,126 @@
+.container{
+  margin: 0;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  &_heading{
+  background-color: #14213d;
+  color: white;
+  width: 100%;
+  padding: 1rem;
+  font-size: 2rem;
+  letter-spacing: 1.5px;
+  }
+}
+.inputContainer{
+    width: 60%;
+    height: 8vh;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.inputContainer input{
+    width: 60%;
+    height: 80%;
+    margin-right: 1rem;
+    font-size: 1.2rem;
+    padding: 0 0.5rem;
+    border: none;
+    box-shadow: 2px 2px 10px gray;
+    background-color: white;
+  }
+  .inputContainer input:focus{
+    outline: none;
+  }
+  .add_task_btn{
+    width: 20%;
+    height: 90%;
+    font-size: 1rem;
+    background-color: #fca311;
+    border: none;
+    letter-spacing: 1px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .add_task_btn:hover{
+    opacity: 0.8;
+  }
+  .status_btn{
+    padding:5px;
+    border-radius:5px;
+    background-color: bisque;
+    width:120px
+  }
+  .active{
+    background-color:orange;
+    color:white
+ }
+.status_btn_container{
+  display: flex;
+  align-items: center;
+  gap:10px
+ }
+ 
+ul {
+  list-style-type: none;
+  padding: 0;
+  width:100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  margin-top: 15px;
+  
+}
+li {
+  text-decoration: none;
+  background-color: #14213d;
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.4rem 2rem;
+  letter-spacing: 1.5px;
+  box-shadow: 2px 2px 9px #e5e5e5;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.delete_btn{
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+@media(max-width:740px){
+    html{
+      font-size: 55%;
+    }
+    .inputContainer{
+      flex-direction: column;
+      width: 100%;
+      gap: 1rem;
+    }
+  
+    .inputContainer input{
+      width: 90%;
+    }
+  
+    .add_task_btn{
+      width: 40%;
+    }
+    .status_btn{
+        padding:5px;
+        border-radius:5px;
+        background-color: bisque;
+        width:60px;
+        font-size: 10px;
+      }
+  }
+
+
+
+
